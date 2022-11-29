@@ -19,7 +19,7 @@
     ],
     "mcu": "samd21g18a",
     "usb_product": "Omzlo CANZERO",
-    "variant": "canzero"
+    "variant": "mkrzero"
   },
   "debug": {
     "jlink_device": "ATSAMD21G18",
