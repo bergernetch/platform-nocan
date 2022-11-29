@@ -156,14 +156,12 @@
     "tool-jlink": {
       "type": "uploader",
       "optional": true,
-      "owner": "platformio",
       "version": "^1.63208.0"
     },
-    "tool-nocan": {
+    "tool-nocanc": {
       "type": "uploader",
       "optional": false,
-      "owner": "platformio",
-      "version": "^1.63208.0"
+      "owner": "bergernetch"
     },
     "tool-cmake": {
       "optional": true,
