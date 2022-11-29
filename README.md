@@ -13,7 +13,7 @@ Based on https://github.com/platformio/platform-atmelsam
 
 ```ini
 [env:canzero]
-platform = https://github.com/bergernetch/platform-nocan.git
+platform = https://github.com/bergernetch/platform-nocan.git # or install the platform via url and just use "platform = nocan" here
 framework = arduino
 board = nocan_canzero
 upload_port = 1 # nocan node id
