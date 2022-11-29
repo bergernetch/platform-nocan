@@ -285,7 +285,7 @@ elif upload_protocol == "nocanc":
             platform.get_package_dir("tool-nocanc") or "", "bin", "nocanc"),
         UPLOADERFLAGS=[
         ],
-        UPLOADCMD='"$UPLOADER" "$NODE_ID" "$SOURCES"'
+        UPLOADCMD='"$UPLOADER" upload "$SOURCES" $UPLOAD_PORT'
     )
     upload_actions = [
         #env.VerboseAction(env.AutodetectUploadPort, "Looking for upload port..."),
