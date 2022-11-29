@@ -161,7 +161,7 @@
     },
     "tool-nocanc": {
       "type": "uploader",
-      "optional": false
+      "optional": true
     },
     "tool-cmake": {
       "optional": true,
