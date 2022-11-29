@@ -10,21 +10,13 @@ Based on https://github.com/platformio/platform-atmelsam
 1. [Install PlatformIO](https://platformio.org)
 2. Create PlatformIO project and configure a platform option in [platformio.ini](https://docs.platformio.org/page/projectconf.html) file:
 
-## Stable version
 
 ```ini
-[env:stable]
-platform = nocan
-board = ...
-...
-```
-
-## Development version
-
-```ini
-[env:development]
+[env:canzero]
 platform = https://github.com/bergernetch/platform-nocan.git
-board = ...
+framework = arduino
+board = nocan_canzero
+upload_port = 1 # nocan node id
 ...
 ```
 
