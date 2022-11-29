@@ -19,7 +19,7 @@ from platformio.public import PlatformBase
 IS_WINDOWS = sys.platform.startswith("win")
 
 
-class AtmelsamPlatform(PlatformBase):
+class NocanPlatform(PlatformBase):
     def configure_default_packages(self, variables, targets):
         if not variables.get("board"):
             return super().configure_default_packages(variables, targets)
