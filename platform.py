@@ -39,6 +39,7 @@ class NocanPlatform(PlatformBase):
             upload_tool = "tool-mbctool"
         elif upload_protocol == "nocanc":
             upload_tool = "tool-nocanc"
+            self.packages["tool-nocanc"]["optional"] = False
 
         if upload_tool:
             for name, opts in self.packages.items():
