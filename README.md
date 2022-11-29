@@ -1,11 +1,9 @@
-# Atmel SAM: development platform for [PlatformIO](https://platformio.org)
+# NoCAN: OMZLO NoCAN CANZERO development platform for [PlatformIO](https://platformio.org)
 
-[![Build Status](https://github.com/platformio/platform-atmelsam/workflows/Examples/badge.svg)](https://github.com/platformio/platform-atmelsam/actions)
+The Omzlo CANZERO is an Arduino-compatible board with builtin CANbus networking and designed to be connected to a NoCAN network, enabling the creation of wired IoT applications.
+Based on https://github.com/platformio/platform-atmelsam
 
-Atmel | SMART offers Flash- based ARM products based on the ARM Cortex-M0+, Cortex-M3 and Cortex-M4 architectures, ranging from 8KB to 2MB of Flash including a rich peripheral and feature mix.
-
-* [Home](https://registry.platformio.org/platforms/platformio/atmelsam) (home page in the PlatformIO Registry)
-* [Documentation](https://docs.platformio.org/page/platforms/atmelsam.html) (advanced usage, packages, boards, frameworks, etc.)
+* [Home](https://www.omzlo.com/articles/canzero)
 
 # Usage
 
@@ -16,7 +14,7 @@ Atmel | SMART offers Flash- based ARM products based on the ARM Cortex-M0+, Cort
 
 ```ini
 [env:stable]
-platform = atmelsam
+platform = nocan
 board = ...
 ...
 ```
@@ -25,11 +23,10 @@ board = ...
 
 ```ini
 [env:development]
-platform = https://github.com/platformio/platform-atmelsam.git
+platform = https://github.com/bergernetch/platform-nocan.git
 board = ...
 ...
 ```
 
 # Configuration
 
-Please navigate to [documentation](https://docs.platformio.org/page/platforms/atmelsam.html).
