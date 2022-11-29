@@ -5,35 +5,24 @@
     },
     "core": "arduino",
     "cpu": "cortex-m0plus",
-    "extra_flags": "-DARDUINO_SAMD_ZERO -D__SAMD21G18A__",
+    "extra_flags": "-DARDUINO_SAMD_MKRZERO -D__SAMD21G18A__ -DUSE_ARDUINO_MKR_PIN_LAYOUT",
     "f_cpu": "48000000L",
     "hwids": [
       [
-        "0x2A03",
+        "0x2341",
         "0x804F"
       ],
       [
-        "0x2A03",
-        "0x004D"
-      ],
-      [
-        "0x2A03",
-        "0x804D"
-      ],
-      [
-        "0x2A03",
+        "0x2341",
         "0x004F"
       ]
     ],
     "mcu": "samd21g18a",
-    "usb_product": "Arduino M0 Pro",
-    "variant": "arduino_mzero"
+    "usb_product": "Omzlo CANZERO",
+    "variant": "canzero"
   },
   "debug": {
     "jlink_device": "ATSAMD21G18",
-    "onboard_tools": [
-      "cmsis-dap"
-    ],
     "openocd_chipname": "at91samd21g18",
     "openocd_target": "at91samdXX",
     "svd_path": "ATSAMD21G18A.svd"
@@ -41,24 +30,25 @@
   "frameworks": [
     "arduino"
   ],
-  "name": "Arduino M0 Pro (Native USB Port)",
+  "name": "Omzlo CANZERO",
   "upload": {
     "disable_flushing": true,
     "maximum_ram_size": 32768,
     "maximum_size": 262144,
-    "offset_address": "0x4000",
-    "protocol": "stk500v2",
+    "native_usb": true,
+    "offset_address": "0x2000",
+    "protocol": "nocanc",
     "protocols": [
-      "stk500v2",
+      "nocanc",
+      "sam-ba",
       "blackmagic",
       "jlink",
       "atmel-ice"
     ],
-    "require_upload_port": true,
-    "speed": 57600,
+    "require_upload_port": false,
     "use_1200bps_touch": true,
     "wait_for_upload_port": true
   },
-  "url": "https://www.arduino.cc/en/Main/ArduinoBoardM0PRO",
+  "url": "https://www.arduino.cc/en/Main/ArduinoBoardMKRZero",
   "vendor": "Arduino"
 }

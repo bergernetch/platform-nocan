@@ -37,6 +37,8 @@ class AtmelsamPlatform(PlatformBase):
             upload_tool = "tool-jlink"
         elif upload_protocol == "mbctool":
             upload_tool = "tool-mbctool"
+        elif upload_protocol == "nocanc":
+            upload_tool = "tool-nocanc"
 
         if upload_tool:
             for name, opts in self.packages.items():

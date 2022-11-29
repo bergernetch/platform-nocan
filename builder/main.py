@@ -279,6 +279,21 @@ elif upload_protocol == "mbctool":
         env.VerboseAction("$UPLOADCMD", "Uploading $SOURCE")
     ]
 
+elif upload_protocol == "nocanc":
+    env.Replace(
+        UPLOADER=join(
+            platform.get_package_dir("tool-nocanc") or "", "bin", "nocanc"),
+        UPLOADERFLAGS=[
+            "", '"$NODE_ID"', # nocan_device_id: 1..x
+            "", "$SOURCES", # bin file
+        ],
+        UPLOADCMD='"$UPLOADER" $UPLOADERFLAGS'
+    )
+    upload_actions = [
+        #env.VerboseAction(env.AutodetectUploadPort, "Looking for upload port..."),
+        env.VerboseAction("$UPLOADCMD", "Uploading $SOURCE")
+    ]
+
 elif upload_protocol in debug_tools:
     openocd_args = [
         "-d%d" % (2 if int(ARGUMENTS.get("PIOVERBOSE", 0)) else 1)
