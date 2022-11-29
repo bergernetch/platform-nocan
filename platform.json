@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bergernetch/platform-atmelsam-nocan.git"
+    "url": "https://github.com/bergernetch/platform-nocan.git"
   },
   "version": "1.0.0",
   "frameworks": {
