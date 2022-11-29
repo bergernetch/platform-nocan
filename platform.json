@@ -161,7 +161,8 @@
     },
     "tool-nocanc": {
       "type": "uploader",
-      "optional": true
+      "optional": true,
+      "version":"https://github.com/bergernetch/tool-nocanc.git"
     },
     "tool-cmake": {
       "optional": true,
